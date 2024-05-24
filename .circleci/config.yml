@@ -30,7 +30,7 @@ jobs:
                 git clone git@github.com:hectorlopezv/eks-manifest-todo-app.git
                 git config --global user.email "hectorvmlopez@gmail.com"
                 git config --global user.name "hector lopez"
-                cd kube_manifest
+                cd eks-manifest-todo-app
                 echo $TAG
                 sed -i "s/build-.*/build-$TAG/g" manifest/deployment.yaml
                 cat manifest/deployment.yaml
